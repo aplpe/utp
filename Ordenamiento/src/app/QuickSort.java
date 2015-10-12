@@ -2,7 +2,7 @@ package app;
 
 import java.util.Arrays;
 
-public class Quicksort {
+public class QuickSort {
 	
 	private int[] numbers;
 	private int tamanio;

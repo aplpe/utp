@@ -34,7 +34,7 @@ public class App {
 			opcion = entrada.nextInt();
 			switch (opcion) {
 			case 1:
-				Quicksort objAlgoritmoQuickSort = new Quicksort();
+				QuickSort objAlgoritmoQuickSort = new QuickSort();
 				objAlgoritmoQuickSort.sort(arrNoOrdenado);
 				arrOrdenado = arrNoOrdenado;
 				System.out
