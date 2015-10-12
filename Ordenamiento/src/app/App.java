@@ -6,13 +6,15 @@ import java.util.Scanner;
 
 public class App {
 
+	private static Scanner entrada;
+
 	public static void main(String[] args) {
 		
 		int[] arrNoOrdenado;
 		Random rn = new Random();	
 			
 		int longitud;
-		Scanner entrada = new Scanner(System.in);
+		entrada = new Scanner(System.in);
 				
 		System.out.print("Ingrese la cantidad de elementos del arreglo: ");
 		longitud = entrada.nextInt();
