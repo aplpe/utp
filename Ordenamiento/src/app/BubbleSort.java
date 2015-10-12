@@ -3,6 +3,7 @@ package app;
 public class BubbleSort {
 	
 	private int[] numbers;
+	@SuppressWarnings("unused")
 	private int tamanio;
 	
 	public void sort(int[] values) {
@@ -11,7 +12,7 @@ public class BubbleSort {
 			return;
 		}
 		this.numbers = values;
-		tamanio = values.length;
+		this.tamanio = values.length;
 		bubbleSort(this.numbers);
 	}
 		
