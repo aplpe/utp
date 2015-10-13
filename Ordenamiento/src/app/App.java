@@ -16,7 +16,8 @@ public class App {
 		int longitud = 0, opcion = 0;
 		entrada = new Scanner(System.in);
 
-		System.out.print("Ingrese la cantidad de elementos del arreglo: ");
+		//System.out.print("Ingrese la cantidad de elementos del arreglo: ");
+		System.out.print("Ingrese el numero de elementos del arreglo: ");
 		longitud = entrada.nextInt();
 
 		arrNoOrdenado = new int[longitud];
