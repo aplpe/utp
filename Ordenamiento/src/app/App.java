@@ -90,20 +90,21 @@ public class App {
 				while (opcionSubMenuBB != 3) {
 					System.out.print("Ingrese el algoritmo a usar:\n[1] Busqueda Binaria Iterativa.\n[2] Busqueda Binaria Recursiva.\n[3] Salir\n");
 					opcionSubMenuBB = entrada.nextInt();
-					System.out.print("Ordenamos el arreglo mediante el algoritmo Quicksort.");
+					System.out.print("Ordenamos el arreglo mediante el algoritmo Quicksort.\n");
 					QuickSort objAlgoritmoQuickSortTemporal = new QuickSort();
 					objAlgoritmoQuickSortTemporal.sort(arrNoOrdenado);
+					arrOrdenado = arrNoOrdenado;
 					switch (opcionSubMenuBB) {
 					case 1:
-						encontradoBB = objAlgoritmoBusquedaBinaria.busquedaBinariaIterativa(arrNoOrdenado, datoBB);
+						encontradoBB = objAlgoritmoBusquedaBinaria.busquedaBinariaIterativa(arrOrdenado, datoBB);
 						if (encontradoBB != -1)
 							System.out.printf("El elemento %d fue encontrado en la posicion %d.\n",datoBB, encontradoBB);
 						else
 							System.out.printf("El elemento %d no se encuentra en el arreglo.\n", datoBB);
 						break;
 					case 2:
-						encontradoBL = objAlgoritmoBusquedaBinaria.busquedaBinariaRecursiva(arrNoOrdenado, 0, arrNoOrdenado.length, datoBB);
-						if (encontradoBL != -1)
+						encontradoBB = objAlgoritmoBusquedaBinaria.busquedaBinariaRecursiva(arrOrdenado, 0, arrOrdenado.length, datoBB);
+						if (encontradoBB != -1)
 							System.out.printf("El elemento %d fue encontrado en la posicion %d.\n",datoBB, encontradoBB);
 						else
 							System.out.printf("El elemento %d no se encuentra en el arreglo.\n", datoBB);
@@ -115,7 +116,7 @@ public class App {
 						break;
 					}
 				}
-				continue;							
+				continue;						
 			case 5:	
 				return;				
 			default:
@@ -123,7 +124,5 @@ public class App {
 				break;
 			}
 		}
-
 	}
-
 }
