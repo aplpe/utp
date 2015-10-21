@@ -11,9 +11,10 @@ public class BusquedaBinaria {
 			if (dato < arreglo[centro]) 
 				der = centro - 1;
 			else
-				izq = centro + 1;			
+				izq = centro + 1;	
+			centro = (izq+der)/2;
 		}
-		if (izq < der)
+		if (izq > der)
 			return -1;
 		else
 			return centro;			
