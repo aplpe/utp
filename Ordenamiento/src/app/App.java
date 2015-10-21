@@ -31,7 +31,7 @@ public class App {
 
 		while (opcion != 3) {
 			System.out
-					.print("Ingrese el algoritmo a usar:\n[1] QuickSort\n[2] Bubble Sort\n[3] Salir\n");
+					.print("Ingrese el algoritmo a usar:\n[1] QuickSort\n[2] Bubble Sort\n[5] Salir\n");
 			opcion = entrada.nextInt();
 			switch (opcion) {
 			case 1:
@@ -49,7 +49,7 @@ public class App {
 						.println("Areglo Ordenado por algoritmo 'Bubble Sort': "
 								+ Arrays.toString(arrNoOrdenado));
 				break;
-			case 3:				
+			case 5:				
 				return;				
 			default:
 				System.out.println("Opcion inválida.");
